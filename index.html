@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff8ee" />
+  <meta name="description" content="31.08 - A Little World For Cici. Sebuah hadiah ulang tahun kecil untuk Astri Susantri." />
+  <title>31.08 - A Little World For Cici ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-heart" id="cursorHeart" aria-hidden="true">♡</div>
+
+  <!-- Opening -->
+  <section class="intro-screen" id="intro">
+    <div class="intro-doodles" aria-hidden="true">
+      <span>✦</span><span>♡</span><span>✿</span><span>✧</span>
+    </div>
+
+    <p class="eyebrow reveal-on-load">31 • 08 • 2026</p>
+    <h1 class="intro-title"><span id="introTyping"></span><span class="typing-cursor">|</span></h1>
+    <p class="intro-subtitle" id="introSubtitle">Aku bikin sesuatu buat kamu.<br>Jangan ketawa ya...</p>
+
+    <button class="primary-btn intro-open" id="openWorld">
+      open this little world <span>♡</span>
+    </button>
+
+    <button class="music-intro-btn" id="musicIntroBtn" type="button">
+      ♫ <span>play a little soundtrack</span>
+    </button>
+  </section>
+
+  <!-- Main world -->
+  <main id="world" class="world" aria-hidden="true">
+
+    <header class="floating-ui">
+      <span class="mini-brand">31.08 ♡</span>
+      <button class="music-control" id="musicControl" type="button" aria-label="Putar atau jeda musik">
+        ♫ <span id="musicState">music off</span>
+      </button>
+    </header>
+
+    <div class="section-dots" aria-hidden="true">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- Hero -->
+    <section class="section hero-section" data-section="0">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">31.08</p>
+        <h2>Happy Birthday<br><em>Cici ♡</em></h2>
+        <p class="hero-lead">27 looks good on you.</p>
+        <p class="body-copy">
+          Hari ini bukan cuma tentang bertambahnya satu angka.
+          Hari ini tentang seseorang yang sudah melewati begitu banyak hal
+          untuk sampai di titik ini.
+        </p>
+      </div>
+
+      <div class="polaroid hero-polaroid reveal delay-1 tilt-left">
+        <div class="photo-frame photo-placeholder">
+          <span>your favorite<br>smile goes here ♡</span>
+          <img src="assets/images/cici-smile.jpg" alt="Senyum Cici" onerror="this.style.display='none'; this.previousElementSibling.style.display='grid';">
+        </div>
+        <p>my favorite smile.</p>
+      </div>
+
+      <span class="scroll-hint">scroll slowly ↓</span>
+    </section>
+
+    <!-- Story -->
+    <section class="section story-section" data-section="1">
+      <div class="section-heading reveal">
+        <span class="chapter">chapter 01</span>
+        <h2>How We Got Here</h2>
+        <p>Awalnya mungkin sederhana. Tapi ternyata perjalanan setelahnya tidak.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="timeline-number">01</span>
+          <div class="timeline-card">
+            <span class="small-label">the first look</span>
+            <h3>Pandangan pertama.</h3>
+            <p>Semuanya mungkin dimulai dari sebuah pandangan pertama.</p>
+            <div class="mini-photo photo-placeholder">
+              <span>foto / doodle tangan</span>
+              <img src="assets/images/first-memory.jpg" alt="Kenangan awal" onerror="this.style.display='none'; this.previousElementSibling.style.display='grid';">
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-number">02</span>
+          <div class="timeline-card">
+            <span class="small-label">09.02.2023</span>
+            <h3>Then somehow, we became us.</h3>
+            <p>Tanggal yang mungkin tidak aku ingat dengan sempurna, tapi perjalanan setelahnya tidak akan pernah aku lupakan.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-number">03</span>
+          <div class="timeline-card">
+            <span class="small-label">beach day</span>
+            <h3>Rencana dadakan.</h3>
+            <p>Niatnya liburan. Datang-datang malah pasang.</p>
+            <strong>Pantai: 1 - Kita: 0 😂</strong>
+            <div class="mini-photo photo-placeholder">
+              <span>foto pantai</span>
+              <img src="assets/images/beach.jpg" alt="Kenangan di pantai" onerror="this.style.display='none'; this.previousElementSibling.style.display='grid';">
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-number">04</span>
+          <div class="timeline-card">
+            <span class="small-label">sunset hunting</span>
+            <h3>Chasing sunsets.</h3>
+            <p>Ternyata mencari senja lebih menyenangkan kalau ada kamu.</p>
+            <div class="mini-photo photo-placeholder">
+              <span>foto senja</span>
+              <img src="assets/images/sunset.jpg" alt="Kenangan berburu senja" onerror="this.style.display='none'; this.previousElementSibling.style.display='grid';">
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-number">05</span>
+          <div class="timeline-card">
+            <span class="small-label">jogja</span>
+            <h3>One more memory.</h3>
+            <p>Di antara ramainya perjalanan, ada beberapa momen yang diam-diam ingin aku simpan selamanya.</p>
+            <div class="mini-photo photo-placeholder">
+              <span>foto Jogja</span>
+              <img src="assets/images/jogja.jpg" alt="Kenangan Jogja" onerror="this.style.display='none'; this.previousElementSibling.style.display='grid';">
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-number">06</span>
+          <div class="timeline-card">
+            <span class="small-label">galunggung</span>
+            <h3>We thought we could climb.</h3>
+            <p>Galunggung had other plans.</p>
+            <strong>Stamina: 0% 😂</strong>
+            <div class="mini-photo photo-placeholder">
+              <span>foto Galunggung</span>
+              <img src="assets/images/galunggung.jpg" alt="Kenangan Galunggung" onerror="this.style.display='none'; this.previousElementSibling.style.display='grid';">
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Things I love -->
+    <section class="section love-section" data-section="2">
+      <div class="section-heading reveal">
+        <span class="chapter">chapter 02</span>
+        <h2>Little Things I Love About You</h2>
+        <p>Tap each little card. Ada beberapa hal yang mungkin belum sering aku bilang.</p>
+      </div>
+
+      <div class="love-grid">
+        <button class="love-card reveal" data-card="childish">
+          <span class="card-icon">🧸</span>
+          <span class="card-title">Sisi kekanak-kanakanmu</span>
+          <span class="card-hint">tap me ♡</span>
+        </button>
+        <button class="love-card reveal delay-1" data-card="clingy">
+          <span class="card-icon">🎀</span>
+          <span class="card-title">Sisi manjamu</span>
+          <span class="card-hint">tap me ♡</span>
+        </button>
+        <button class="love-card reveal delay-2" data-card="smile">
+          <span class="card-icon">✨</span>
+          <span class="card-title">Senyummu</span>
+          <span class="card-hint">tap me ♡</span>
+        </button>
+        <button class="love-card reveal delay-3" data-card="eyes">
+          <span class="card-icon">🌷</span>
+          <span class="card-title">Mata yang berbinar</span>
+          <span class="card-hint">tap me ♡</span>
+        </button>
+      </div>
+
+      <div class="love-modal" id="loveModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="love-modal-card">
+          <button class="close-modal" data-close-modal aria-label="Tutup">×</button>
+          <span class="modal-icon" id="modalIcon">♡</span>
+          <h3 id="modalTitle">A little thing...</h3>
+          <p id="modalText"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jealous -->
+    <section class="section jealous-section" data-section="3">
+      <div class="jealous-card reveal">
+        <div class="warning-icon">⚠️</div>
+        <span class="chapter">chapter 03</span>
+        <h2>Jealous Girl Detected</h2>
+        <p>System mendeteksi seseorang dengan level kecemburuan yang... lumayan.</p>
+        <div class="jealous-meter"><span></span></div>
+        <small>jealousy level: <b>quite a lot</b> 😂</small>
+        <button class="primary-btn" id="jealousBtn">proceed anyway 😌</button>
+      </div>
+
+      <div class="jealous-reveal" id="jealousReveal">
+        <p>Okay... we need to talk about something.</p>
+        <p>Aku tahu kamu pencemburu.</p>
+        <p>Kadang sedikit.</p>
+        <p>Kadang lumayan.</p>
+        <p>Kadang... ya sudahlah. 😂</p>
+        <div class="jealous-divider">♡</div>
+        <h3>You don't have to compete with anyone.</h3>
+        <p>
+          Aku memilih kamu bukan karena kamu harus lebih baik dari siapa pun.
+          Aku memilih kamu karena kamu adalah kamu.
+        </p>
+      </div>
+    </section>
+
+    <!-- Hard chapter -->
+    <section class="section hard-section" data-section="4">
+      <div class="hard-content reveal">
+        <span class="chapter">chapter 04</span>
+        <h2>Some Chapters Were Hard.</h2>
+        <div class="quiet-photo photo-placeholder">
+          <span>foto yang paling meaningful</span>
+          <img src="assets/images/hard-memory.jpg" alt="Kenangan yang berarti" onerror="this.style.display='none'; this.previousElementSibling.style.display='grid';">
+        </div>
+        <p>
+          Kita pernah sampai di titik di mana memperjuangkan satu sama lain
+          terasa begitu berat.
+        </p>
+        <p> Ada rasa takut. Ada kecewa. Ada hal-hal yang hampir membuat kita berhenti.</p>
+        <p> Mungkin itu adalah salah satu bagian paling sulit dalam perjalanan kita.</p>
+        <div class="hard-line"></div>
+        <h3>But we're still here.</h3>
+        <p>Dan untuk itu, aku bersyukur.</p>
+      </div>
+    </section>
+
+    <!-- Letter -->
+    <section class="section letter-section" data-section="5">
+      <div class="letter-wrap reveal">
+        <span class="chapter">chapter 05</span>
+        <h2>Thank You For Staying.</h2>
+        <div class="letter-paper">
+          <div class="letter-top">Cici,</div>
+          <div class="letter-body">
+            <p>Terima kasih sudah ada di sini.</p>
+            <p>Terima kasih sudah bertahan sampai umur 27.</p>
+            <p>
+              Terima kasih karena dulu kamu yang awalnya bukan siapa-siapa,
+              perlahan menjadi seseorang yang sangat berarti dalam hidupku.
+            </p>
+            <p>
+              Kamu selalu ada. Dalam banyak keadaan, dalam banyak cerita,
+              dalam banyak hari yang mungkin bahkan tidak kamu sadari betapa
+              berartinya keberadaanmu buatku.
+            </p>
+            <p>Aku mungkin tidak selalu pandai mengatakan semuanya.</p>
+            <p> Tapi aku ingin kamu tahu satu hal:</p>
+            <p class="letter-emphasis">Aku sangat bersyukur pernah bertemu kamu.</p>
+            <p>Aku suka kamu yang manja.</p>
+            <p>Aku suka kamu yang kadang kekanak-kanakan.</p>
+            <p>Aku suka kamu yang ceroboh dan suka lupa.</p>
+            <p>Aku suka mata kamu ketika sedang menginginkan sesuatu dan tiba-tiba berbinar.</p>
+            <p>Aku suka senyum kamu.</p>
+            <p>Aku suka kamu yang apa adanya.</p>
+            <p>Dan aku suka kamu yang selalu ada.</p>
+            <p class="letter-emphasis">Terima kasih sudah menjadi bagian dari hidupku.</p>
+            <p>Jangan dulu pergi.</p>
+            <p>
+              Aku masih ingin berpetualang bersama kamu.
+              Masih banyak tempat yang belum kita datangi.
+              Masih banyak senja yang belum kita buru.
+              Masih banyak perjalanan yang belum kita tempuh.
+              Masih banyak cerita yang belum kita tulis.
+            </p>
+            <p class="letter-emphasis">So please... stay a little longer, okay?</p>
+            <p class="letter-final">Happy 27th Birthday, sayang. ♡</p>
+            <p class="signature">- Babe</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final -->
+    <section class="section final-section" data-section="6">
+      <div class="sunset-sky" aria-hidden="true">
+        <span class="sun">☼</span>
+        <span class="cloud cloud-a">☁</span>
+        <span class="cloud cloud-b">☁</span>
+      </div>
+
+      <div class="final-content reveal">
+        <span class="chapter">chapter 06</span>
+        <h2>Where Should We Go Next?</h2>
+        <p>Masih banyak tempat yang belum kita datangi.</p>
+
+        <div class="adventure-options">
+          <button class="adventure-btn" data-place="Beach">🏖️<span>Beach</span></button>
+          <button class="adventure-btn" data-place="Mountain">🌄<span>Mountain</span></button>
+          <button class="adventure-btn" data-place="Sunset">🌅<span>Sunset</span></button>
+        </div>
+
+        <div class="adventure-answer" id="adventureAnswer">
+          <p>Anywhere is fine...</p>
+          <h3>As long as it's with you. ♡</h3>
+        </div>
+
+        <div class="final-date">31.08.2026</div>
+        <div class="final-name">A little world for Cici.</div>
+        <div><img src="assets/images/favicon.png" height="100" width="100" alt="Favicon"></div>
+      </div>
+
+      <button class="replay-btn" id="replayBtn">↻ replay our story</button>
+    </section>
+  </main>
+
+  <audio id="birthdayMusic" loop preload="none">
+    <source src="assets/music/here-with-me.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="toast" id="toast" role="status"></div>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/interactions.js"></script>
+</body>
+</html>
