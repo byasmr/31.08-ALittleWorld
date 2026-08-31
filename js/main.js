@@ -53,6 +53,6 @@ musicIntroBtn.addEventListener("click", async () => {
 
 document.addEventListener("DOMContentLoaded", async () => {
   document.body.classList.add("is-locked");
-  await typeText(introTyping, "Hey, Cici...", 95);
+  await typeText(introTyping, "Hey, Babe...", 95);
   introSubtitle.classList.add("is-ready");
 });
